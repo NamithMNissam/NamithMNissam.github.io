@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website Design</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Ens Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="academics.html">ACADEMICS</a></li>
+                <li><a href="schoollife.html">SCHOOL LIFE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our School Life</h1>
+</section>
+
+<!------ Schoollife content ------>
+
+<section class="Schoollife-content">
+
+    <div class="row">
+        <div class="Schoollife-left">
+            <img src="3.png">
+            <h2>Our School Life</h2>
+            <p>Equipping the learner to handle real life situations is an integral part of education and we at ENS provide students with the opportunity to develop and enhance these skills through our life skills programme. The programme aims at building a child's ability to work and share roles effectively within a community, building on team building skill s, role playing skills and technique pruning activities.</p>
+            <br>
+            <p>A wide range of activities conducted through our school clubs and societies help students in inculcating their interests and skills under the guidance of our staff and teachers. Holistic development is met through the continuous participation of our students in activities that are organised in school outside the prescribed C.B.S.E curriculum through various inter school competitions, excursions, camps, interactive sessions and other activities. To know more about the programmes held in school, visit our School Life page.</p>
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment">
+                    </textarea>
+                    <button type="submit" class="hero-btn red-btn">POST 
+                        COMMENT</button>
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="Schoollife-right">
+            <h3>DEPARTMENT</h3>
+            <div>
+                <span>Department of Computer Science</span>
+                <p>The use of computers has drastically impacted our life since its inception in the 1950's and a world without it is incomprehensible as we continually grow to be dependent on them.</p>
+            </div>
+            <div>
+                <span>Department of English</span>
+                <p>English is the medium of instruction in school and therefore imperative to our teaching/learning approach. Our objective is to instruct students in mastering the four language skills , (listening, speaking, reading and writing) along with nurturing their cognitive, analytical, creative and interpretive skills.</p>
+            </div>
+            <div>
+                <span>Department of Science</span>
+                <p>The prime objective of this department is to make children feel the importance of science in daily life which in turn will trigger in them curiosity to learn more. Science is life itself and a social transformation is possible only through science and scientific thoughts, as it would remove the darkness from the minds of the people.</p>
+            </div>
+            <div>
+                <span>Department of Hindi</span>
+                <p>The Hindi language (Hindi course B of the CBSE curriculum) is taught at TENS as a compulsory subject from Grade 1 to 10. Its relevance in the 21st century is unprecedented considering India's increasing prominence in the affairs of the world today and the changing nature of India's stature in influencing current world political trends.</p>
+            </div>
+            <div>
+                <span>Department of Islamic Studies</span>
+                <p>In The Emirates National School we teach Islamic studies to bring children closer to the Creator and through that inculcate good moral values in them. In Islamic studies we teach the basic principles of Islam, the Holy Qur'an, Hadiths, the stories of different Prophets, the different acts of worships, good morals and ethics etc.</p>
+            </div>
+            <div>
+                <span>Department of Mathematics</span>
+                <p>Education is imparted for achieving certain ends and goals. Various subjects of the school curriculum are different means to achieve these goals. Apart from enabling the students to acquire essential mathematical knowledge, skills, interests and attitudes, the teaching of mathematics has to help the students in many ways.</p>
+            </div>
+            <div>
+                <span>Department of Social Studies</span>
+                <p>Social Science is an integrated study, which draws its content mainly from various disciplines such as geography, history, political science, economics, sociology etc. Together they provide a comprehensive view of society-over space and time, in relation to each other. Each subject has distinct methods of enquiry that help the learners understand society from different angles and from a holistic view.</p>
+            </div>
+            <div>
+                <span>Department of Value Education</span>
+                <p>The present educational system lays a lot of importance to the teaching of value education as an important subject in the School curriculum. The value education classes aim at developing the necessary skills and values which will contribute to the holistic development of the students.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The Emirates National School, Sharjah approach learning and research, with a mission to Equip, Enlighten, Enrich and Empower our pupils to positively impact our world.<br> The School honours excellence, hard work, discipline, piety and honesty among our students and instruct them to <br>uphold the spirit of value-based learning along with the wisdom of reasoning and understanding.<br> We invest in the future by nurturing the young minds of today to become leaders of tomorrow.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-map-marker"></i>
+    </div>
+    <p>Made by <i class="fa fa-heart-o"></i> NAMITH</p>
+    
+</section>
+
+<!-------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
